@@ -1,7 +1,6 @@
 aid: applied-ev
 name: Applied Ev
-description: 'Applied Ev is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Applied EV is a Melbourne‑based mobility technology company developing autonomous electric freight and industrial vehicles. It offers a software‑defined platform with a proprietary Digital Backbone control system, enabling scalable autonomy for logistics, warehouse, and factory transport. The company provides hardware such as the Blanc Robot cabin‑less vehicle and a suite of power and control products, and partners with firms like Siemens, NXP, and Oxbotica to deliver end‑to‑end autonomous solutions.'
 url: https://raw.githubusercontent.com/api-evangelist/applied-ev/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -19,5 +18,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/applied-ev-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/applied-ev-domain-security.yml
 - type: Website
   url: https://www.hiive.com/securities/applied-ev-stock
