@@ -1,26 +1,81 @@
 aid: applied-ev
+
 name: Applied Ev
+
+image: https://www.appliedev.com/api/assets/5146586c-032d-4b18-90fc-2edeffc24a30
+
 description: 'Applied EV is a Melbourne‑based mobility technology company developing autonomous electric freight and industrial vehicles. It offers a software‑defined platform with a proprietary Digital Backbone control system, enabling scalable autonomy for logistics, warehouse, and factory transport. The company provides hardware such as the Blanc Robot cabin‑less vehicle and a suite of power and control products, and partners with firms like Siemens, NXP, and Oxbotica to deliver end‑to‑end autonomous solutions.'
+
 url: https://raw.githubusercontent.com/api-evangelist/applied-ev/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Applied EV does not publish any developer program or public API documentation.
+  evidence:
+    - url: https://www.appliedev.com
+      status: 200
+  checked: 2026-09-25
+
 tags:
 - Company
-apis: []
+- Mobility
+- AutonomousVehicles
+- Electric
+- Logistics
+- Technology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/applied-ev-clarity-security.txt
+- type: WellKnown
+  url: well-known/applied-ev-well-known.yml
+- type: Security
+  url: https://clarity.com/vdp
+- type: Hosts
+  url: hosts/applied-ev-hosts.yml
+- type: Vendors
+  url: vendors/applied-ev-vendors.yml
 - type: VulnerabilityDisclosure
   url: security/applied-ev-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/applied-ev-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/applied-ev-stock
+  url: https://www.appliedev.com/
+- type: Documentation
+  url: https://www.appliedev.com/about
+- type: TermsOfService
+  url: https://www.appliedev.com/terms
+- type: PrivacyPolicy
+  url: https://www.appliedev.com/privacy
+- type: Support
+  url: https://www.appliedev.com/contact
+- type: Blog
+  url: https://www.appliedev.com/news
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
